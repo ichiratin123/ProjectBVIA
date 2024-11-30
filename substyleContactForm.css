@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+@font-face {
+    font-family: 'GentleMonster';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://www.gentlemonster.com/int/assets/fonts/GM/GentleMonsterSerif-Regular.woff2") format("woff2"),
+         url("https://www.gentlemonster.com/int/assets/fonts/GM/GentleMonsterSerif-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: local("NotoSansCjkKr-thin"), 
+    url("https://www.gentlemonster.com/int/assets/fonts/notoSans/NotoSansKR-Thin.woff2") format("woff2"), 
+    url("https://www.gentlemonster.com/int/assets/fonts/notoSans/NotoSansKR-Thin.woff") format("woff");
+}
+
+/* nav */
+.nav_items{
+    position: fixed;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.nav_itemsChange{
+    background-color: white; 
+}
+.textFont{
+    font-family: 'Noto Sans', sans-serif;
+}
+.flex_row{
+    display: flex;
+    gap: 1px;
+}
+
+#logoText{
+    font-family: 'GentleMonster', sans-serif;
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav_item a{
+    color: black;
+    text-decoration: none;
+}
+
+.changeColor a{
+    color: black;
+    text-decoration: none;
+}
+
+li{
+    margin: 0 15px;
+}
+
+/* Search */
+.searchContainer{
+    position: relative;
+    transition: 0.5s;
+}
+.searchBar{
+    padding: 8px 8px;
+    background-color: transparent;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid black;
+    width: 200px;
+    height: 35px;
+    transition: 0.45s;
+}
+
+.searchBarChange{
+    border: 1px solid Black;
+}
+
+.searchBarExtend{
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.itemExtend{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 2 ;
+    justify-content: center;
+    display: none;
+}
+
+#closeSearchBar{
+    display: none;
+    background-color: #111111;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.searchBar:focus {
+    background-color: white;
+    width: 500px;
+    border-color: black;
+    margin: 10px;
+}
+#search::placeholder{
+    color: black;
+}
+
+#search.placeHolderBlack::placeholder {
+    color: black;
+}
+
+.effectOverlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    clip-path: inset(25% 0 0 0);
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
+    display: none;
+    overflow: auto;
+    pointer-events: auto;
+}
+
+
+/* Shop in form */
+.shopCountry {
+    display: inline-block;
+}
+
+#shopIn {
+    cursor: pointer;
+}
+
+.form-country {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1;
+    width: 350px;
+}
+
+#countryForm label, #countryForm select, #countryForm button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.note {
+    font-size: 12px;
+    color: #555;
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.save-button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.selection {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#currency{
+    pointer-events: none;
+} 
+
+label {
+    display: block;
+    font-size: 15px;
+    margin: 15px 0 5px;
+}
+
+#languageText {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: Black;
+}
+
+/* cart */
+.cartContainer {
+    position: relative;
+}
+
+.cartExtend {
+    position: fixed;
+    top: 50px;
+    right: -300%;
+    width: 300px;
+    height: calc(100vh - 50px);
+    background-color: white;
+    z-index: 3;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.cartExtend.active {
+    right: 0;
+}
+
+.cartOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    clip-path: inset(6.5% 12% 0 0);
+    z-index: 1;
+    display: none;
+    overflow: auto;
+    pointer-events: auto;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Main */
+.MainDiv{
+    padding-top: 100px;
+    justify-items: center;
+    display: flex;
+}
+h5{
+    padding-bottom: 40px;
+}
+.divLeft{
+    margin-left: 200px;
+    margin-right: 300px;
+}
+.heading{
+    font-weight: 700;
+}
+
+.contact{
+    color: black;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.iLeft{
+    margin-bottom: 20px;
+}
+.itemRight{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.divRight{
+    max-width: 925px;
+    padding-top: 100px;
+}
+
+
+/* form */
+.textBox, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+
+/* footer */
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 30px;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+.footer_section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer_section_title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer_group {
+    margin-bottom: 30px;
+}
+
+.footer_items {
+    list-style-type: none;
+}
+
+.footer_item {
+    margin-bottom: 10px;
+}
+
+.footer_item_link {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer_item_link:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}

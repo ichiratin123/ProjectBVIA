@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleVenom.css">
+        <title>GENTLE MONSTER Official Site</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+          rel="stylesheet"
+          data-purpose="Layout StyleSheet"
+          title="Web Awesome"
+          href="/css/app-wa-3b124ff0e0d7a67cd8c995d0aeb1d15a.css?vsn=d"
+        >
+    
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+          >
+    
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+          >
+    
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+          >
+    
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+          >
+    
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+          >
+    
+          <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+          >
+    </head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav_items">
+                <!-- Logo -->
+                <li id="logo">
+                    <!-- <img src="image/logo_white.png" alt="logowhite"> -->
+                     <a href="index.html" class="text-decoration-none text-dark" id="logoText">GENTLE MONSTER</a>
+                </li>
+                
+                <!-- Navigation Items -->
+                <div class="flex_row">
+                    <li class="nav_item textFont"><a href="sunglasses.html">Sunglasses</a></li>
+                    <li class="nav_item textFont"><a href="glasses.html">Glasses</a></li>
+                    <li class="nav_item textFont"><a href="collab.html">Collaborations</a></li>
+                    <li class="nav_item textFont"><a href="styles.html">Styles</a></li>
+                    <li class="nav_item textFont"><a href="stories.html">Stories</a></li>
+                    <li class="nav_item textFont"><a href="stores.html">Stores</a></li>
+                    <li class="nav_item textFont"><a href="services.html">Services</a></li>
+                </div>
+                
+                <!-- Right-Side Items -->
+                <div class="flex_row">
+                    <!-- Search Bar -->
+                    <li>
+                        <div class="searchContainer">                     
+                            <div class="popupcontainer">
+                                <input type="text" id="search" name="search" class="searchBar" placeholder="Search">
+                                <button id="closeSearchBar">x</button>
+                                <div class="itemExtend">
+                                    <div class="itemLeft">
+                                        <p>Popular searches</p>
+                                        <ul>
+                                            <li>Gelati 01</li>
+                                            <li>Jade 01(BR)</li>
+                                            <li>Dada 01(G)</li>
+                                            <li>Benben GR7</li>
+                                            <li>Molta BRC9</li>
+                                            <li>Young G13</li>
+                                            <li>Kiko 01(SM)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="itemRight">
+                                        <p>Explore our:</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="effectOverlay"></div>
+                            </div>
+
+                        </div>
+                    </li>
+    
+                    <!-- Shop Country -->
+                    <li class="shopCountry">
+                        <section id="shopIn">
+                            <p class="text-dark textFont shopText">Shop in <span class="currentCountry textFont shopText">CZ</span></p>
+                        </section>
+                        <div class="form-country">
+                            <button id="closeForm" class="close-button">&times;</button>
+                            <form id="countryForm">
+                                <label for="countrySelect" class="localText">Please select your Location </label>
+                                <select id="countrySelect" name="country" class="selection">
+                                    <option value="anou">Please select your shipping country</option>
+                                    <option value="us">United States (USD)</option>
+                                    <option value="uk">United Kingdom (GBP)</option>
+                                    <option value="ca">Canada (CAD)</option>
+                                    <option value="vn">Vietnam (VND)</option>
+                                    <option value="jp">Japan (JPY)</option>
+                                    <option value="kr">South Korea (KRW)</option>
+                                    <option value="de">Germany (EURO)</option>
+                                    <option value="fr">France (EURO)</option>
+                                    <option value="es">Spain (EURO)</option>
+                                    <option value="it">Italy (EURO)</option>
+                                    <option value="cn">China (CNY)</option>
+                                    <option value="in">India (INR)</option>
+                                    <option value="au">Australia (AUD)</option>
+                                    <option value="br">Brazil (BRL)</option>
+                                    <option value="za">South Africa (ZAR)</option>
+                                    <option value="mx">Mexico (MXN)</option>
+                                </select>
+                                <button type="submit" class="save-button localText">Continue Shopping</button>
+                                <p class="note localText">
+                                    Please be advised that changing your location while shopping will remove all contents from your Shopping Bag.
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+    
+                    <!-- Login -->
+                    <li><a href="" class="text-dark text-decoration-none textFont loginText">Login</a></li>
+                    
+                    <!-- Cart -->
+                    <li>
+                        <div class="cartContainer">
+                            <button id="cartButton" style="background: none; border: none; cursor: pointer;">
+                                <i class="fa-sharp fa-light fa-bag-shopping iconBag" style="color: black;"></i>
+                            </button>
+                            <div class="cartExtend">
+                                <button id="closeCart" class="close-button">x</button>
+                                <div class="cartContent">
+                                    <h3>Shopping Bag</h3>
+                                    <p>No product in my shopping bag</p>
+                                    <hr>
+                                    <p>Standard Shipping <span>Free</span></p>
+                                    <p>Total <span>S$ 0</span></p>
+                                </div>
+                            </div>
+                            <div class="cartOverlay"></div> 
+                            </div>
+                        </div>
+                    </li>
+                    
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div class="MainDiv">
+        <div class="productTop">
+            <div class="productLeft">
+                <div class="TopproductCard">
+                    <div class="click-zoom">
+                        <label>
+                            <input type="checkbox">
+                            <img class="imgItem" src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-01-1.jpg" alt="Product 1">
+                        </label>
+                    </div>
+                </div>
+                <div class="TopproductCard">
+                    <div class="click-zoom">
+                        <label>
+                            <input type="checkbox">
+                            <img class="imgItem" src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-01-2.jpg" alt="Product 1">
+                        </label>
+                    </div>
+                </div>
+                <div class="TopproductCard">
+                    <div class="click-zoom">
+                        <label>
+                            <input type="checkbox">
+                            <img class="imgItem" src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-01-3.jpg" alt="Product 1">
+                        </label>
+                    </div>
+                </div>
+                <div class="TopproductCard">
+                    <div class="click-zoom">
+                        <label>
+                            <input type="checkbox">
+                            <img class="imgItem" src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-01-4.jpg" alt="Product 1">
+                        </label>
+                    </div>
+                </div>
+                <div class="TopproductCard">
+                    <div class="click-zoom">
+                        <label>
+                            <input type="checkbox">
+                            <img class="imgItem" src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-01-5.jpg" alt="Product 1">
+                        </label>
+                    </div>
+                </div>
+                <div class="TopproductCard">
+                    <div class="click-zoom">
+                        <label>
+                            <input type="checkbox">
+                            <img class="imgItem" src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/NewWEB_SUN_2024_PACKAGE_1920x2604.JPG" alt="Product 1">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="productRight">
+                <div class="coundown"><p class="text-danger saleItem">Sale Item: <span id="countdownTag" class="saleItem"></span></p></div>
+                <div class="topPrice">
+                    <div class="nameVenom">
+                        <p><strong>Venom 01</strong></p>
+                    </div>
+                    <div class="priceContainer">
+                        <p ><strong class="priceItem">Kč‌7,950.00</strong></p>
+                    </div>
+                </div>
+
+                <div class="orderColor">
+                    <div class="colorCard" id="selectColor">
+                        <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-01-2.jpg" alt="Color 1">
+                    </div>
+                    <div class="colorCard">
+                        <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-BRC11-2_1.jpg" alt="Color 2">
+                    </div>
+                    <div class="colorCard">
+                        <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-YC9-2.jpg" alt="Color 3">
+                    </div>
+                    <div class="colorCard">
+                        <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-V3-2.jpg" alt="Color 4">
+                    </div>
+                </div>
+
+                <div class="noteGlasses">
+                    <p>Discover the Venom 01 sunglasses from Gentle Monster’s 2024 Collection. This piece features a contemporary square shape, a simple black frame, and an iconic metal detail on the temples.</p>
+                </div>
+                
+                <div class="buttonsDiv">
+                    <button class="buttonShop text-light" style="background-color: black;">
+                        <strong>Add to Shopping Bag</strong>
+                    </button>
+    
+                    <button class="buttonShop" style="background-color: white;">
+                        <strong>Add to Wishlist</strong>
+                    </button>
+                </div>
+
+                <p style="margin-left: 120px; margin-top: 30px; font-size: 12px; color: gray">Complimentary shipping</p>
+            
+                
+                <div class="accordionDiv mt-5"> 
+                    <div class="accordion accordion-flush mt-4"
+                        id="accordionExample"> 
+                        <div class="accordion-item"> 
+                            <h2 class="accordion-header" id="headingTwo"> 
+                                <button class="accordion-button collapsed shadow-none"
+                                    type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"> 
+                                    Product Details 
+                                </button> 
+                            </h2> 
+            
+                            <div id="collapseTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample"> 
+                                <div class="accordion-body"> 
+                                    <ul>
+                                        <li>Black acetate frame</li>
+                                        <li>Black lenses</li>
+                                        <li>Square shape</li>
+                                        <li>Iconic metal detail on the temples</li>
+                                        <li>
+                                            Frame Front: 146.1mm, Frame Side: 146mm
+                                            Lens Width: 53.7mm, Lens Height: 33mm 
+                                            Bridge: 21mm <br>
+                                            <u>Size Guide</u>
+                                        </li>
+                                        <li>Manufacturer&Importer: IICOMBINED CO., LTD.</li>
+                                        <li>Country of Manufacturer: China</li>
+                                      </ul>
+                                </div> 
+                            </div> 
+                        </div> 
+            
+                        <div class="accordion-item"> 
+                            <h2 class="accordion-header" id="headingOne"> 
+                                <button class="accordion-button collapsed shadow-none"
+                                    type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"> 
+                                    Shipng & Returns 
+                                </button> 
+                            </h2> 
+                            <div id="collapseOne"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample"> 
+                                <div class="accordion-body"> 
+                                    <ul>
+                                        <li>Free Gift Packaging <br>
+                                            Our gift packaging includes a signature gift box</li>
+                                        <li>Complimentary Gift Wrapping <br>
+                                            All purchases made on the official Gentle Monster website will be packaged with a special bow. <br>
+                                            <img src="https://web-resource.gentlemonster.com/assets/img/shop/package/gift_wrapping_2023.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </div> 
+                        </div>
+                        
+                        <div class="accordion-item"> 
+                            <h2 class="accordion-header" id="headingTwo"> 
+                                <button class="accordion-button collapsed shadow-none"
+                                    type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse3"
+                                    aria-expanded="false"
+                                    aria-controls="collapse3"> 
+                                    Import duty & Tax
+                                </button> 
+                            </h2> 
+            
+                            <div id="collapse3"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="heading3"
+                                data-bs-parent="#accordionExample"> 
+                                <div class="accordion-body"> 
+                                    <p>You can check a final tax and duty calculation with an option for prepayment at checkout. <br>
+
+                                        Product price doest not include tax and the amount of duties will vary by different terms and tax policy for each country.</p>
+                                </div> 
+                            </div> 
+                        </div> 
+
+                        <div class="accordion-item"> 
+                            <h2 class="accordion-header" id="headingTwo"> 
+                                <button class="accordion-button collapsed shadow-none"
+                                    type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse4"
+                                    aria-expanded="false"
+                                    aria-controls="collapse4"> 
+                                    Questions?
+                                </button> 
+                            </h2> 
+            
+                            <div id="collapse4"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="heading4"
+                                data-bs-parent="#accordionExample"> 
+                                <div class="accordion-body"> 
+                                    <ul>
+                                        <li>By Telephone: +82 1600 2126</li>
+                                        <li>Email: <u>Contact Us</u></li>
+                                        <li>Monday to Friday, 9:30am to 5pm (GMT +9)</li>
+                                    </ul>
+                                </div> 
+                            </div> 
+                        </div> 
+
+                    </div> 
+                </div> 
+
+
+                
+            </div>
+        </div>
+        <div class="productBot">
+            <h5 style="margin-left: 20px;">You may also be interested in</h5>
+            <div class="productsRec">
+                <!-- product 1 -->
+                <div class="productCard">
+                    <div class="productImg">
+                        <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_BENVEN-01-2_2.jpg" alt="Lin 01 Image 1">
+                    </div>
+                    <div class="productInfo">
+                        <h3>Benven 01</h3>
+                        <p>Kč 8,100.00</p>
+                        <span>+ <span class="ColorNumber text-danger">4</span> Colors</span>
+                    </div>
+                </div>
+
+                <!-- product 2 -->
+                <div class="productCard">
+                    <div class="productImg">
+                        <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_ROCOCO_01_1_3.jpg" alt="Lin 01 Image 1">
+                    </div>
+                    <div class="productInfo">
+                        <h3>Rococo 01</h3>
+                        <p>Kč 8,200.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                </div>
+
+                <!-- product 3 -->
+                <div class="productCard">
+                    <div class="productImg">
+                        <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-01-2_2.jpg" alt="Lin 01 Image 1">
+                    </div>
+                    <div class="productInfo">
+                        <h3>Dada 01</h3>
+                        <p>Kč 8,100.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                </div>
+
+                <!-- product 4 -->
+                <div class="productCard">
+                    <div class="productImg">
+                        <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_KIKO-01-2_2.jpg" alt="Lin 01 Image 1">
+                    </div>
+                    <div class="productInfo">
+                        <h3>Kiko 01</h3>
+                        <p>Kč 8,200.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                </div>
+
+                <!-- product 5 -->
+                <div class="productCard">
+                    <div class="productImg">
+                        <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-BRC11-2_1.jpg" alt="Lin 01 Image 1">
+                    </div>
+                    <div class="productInfo">
+                        <h3>Dada BRC11</h3>
+                        <p>Kč 8,200.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Customer Service -->
+        <div class="footer_nav">
+            <div class="footer_section">
+                <div class="footer_section_title">Customer Service</div>
+                <div class="footer_group">
+                    <ul class="footer_items">
+                        <li class="footer_item"><a class="footer_item_link" href="contactForm.html">Contact us</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/customercare/shipping">Shipping</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/customercare/tax">Tax</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/customercare/return">Exchanges/Returns</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/bbs/order_guest">Track Your Order</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Legal Notice -->
+            <div class="footer_section">
+                <div class="footer_section_title">Legal Notice</div>
+                <div class="footer_group">
+                    <ul class="footer_items">
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/legal/terms">Terms of Use</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/legal/privacy_policy">Privacy Policy</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/legal/cookie_policy">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer_section">
+                <div class="footer_section_title">Social Media</div>
+                <div class="footer_group">
+                    <ul class="footer_items">
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.facebook.com/gentlemonsterofficial" target="_blank">Facebook</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="http://instagram.com/gentlemonster" target="_blank">Instagram</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.youtube.com/c/gentlemonsterofficial" target="_blank">YouTube</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://twitter.com/_gentlemonster_" target="_blank">X</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="http://pf.kakao.com/_Vgxnhu" target="_blank">KakaoTalk</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.pinterest.com/gentlemonster" target="_blank">Pinterest</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/img/common/wechat_qr.jpg" target="_blank">WeChat</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="http://weibo.com/gentlemonsteraccount" target="_blank">Weibo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2024 GENTLE MONSTER</p>
+            <div>
+                All rights reserved. IICOMBINED Co., Ltd.
+            </div>
+        </div>
+    </footer>
+    <script src="\script\subsearchbar.js"></script>
+    <script src="\script\shopIn.js"></script>
+    <script src="\script\subcart.js"></script>
+    <script src="\script\countdown.js"></script>
+    <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"> </script> 
+    
+</body>
+</html>

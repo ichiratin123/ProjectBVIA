@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="substyleContactForm.css">
+    <title>GENTLE MONSTER Official Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        data-purpose="Layout StyleSheet"
+        title="Web Awesome"
+        href="/css/app-wa-3b124ff0e0d7a67cd8c995d0aeb1d15a.css?vsn=d"
+    >
+
+        <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+        >
+
+        <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+        >
+
+        <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+        >
+
+        <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+        >
+
+        <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+        >
+
+        <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+        >
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav_items">
+                <!-- Logo -->
+                <li id="logo">
+                    <!-- <img src="image/logo_white.png" alt="logowhite"> -->
+                     <a href="index.html" class="text-decoration-none text-dark" id="logoText">GENTLE MONSTER</a>
+                </li>
+                
+                <!-- Navigation Items -->
+                <div class="flex_row">
+                    <li class="nav_item textFont"><a href="sunglasses.html">Sunglasses</a></li>
+                    <li class="nav_item textFont"><a href="glasses.html">Glasses</a></li>
+                    <li class="nav_item textFont"><a href="collab.html">Collaborations</a></li>
+                    <li class="nav_item textFont"><a href="styles.html">Styles</a></li>
+                    <li class="nav_item textFont"><a href="stories.html">Stories</a></li>
+                    <li class="nav_item textFont"><a href="stores.html">Stores</a></li>
+                    <li class="nav_item textFont"><a href="services.html">Services</a></li>
+                </div>
+                
+                <!-- Right-Side Items -->
+                <div class="flex_row">
+                    <!-- Search Bar -->
+                    <li>
+                        <div class="searchContainer">                     
+                            <div class="popupcontainer">
+                                <input type="text" id="search" name="search" class="searchBar" placeholder="Search">
+                                <button id="closeSearchBar">x</button>
+                                <div class="itemExtend">
+                                    <div class="itemLeft">
+                                        <p>Popular searches</p>
+                                        <ul>
+                                            <li>Gelati 01</li>
+                                            <li>Jade 01(BR)</li>
+                                            <li>Dada 01(G)</li>
+                                            <li>Benben GR7</li>
+                                            <li>Molta BRC9</li>
+                                            <li>Young G13</li>
+                                            <li>Kiko 01(SM)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="itemRight">
+                                        <p>Explore our:</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="effectOverlay"></div>
+                            </div>
+
+                        </div>
+                    </li>
+    
+                    <!-- Shop Country -->
+                    <li class="shopCountry">
+                        <section id="shopIn">
+                            <p class="text-dark textFont shopText">Shop in <span class="currentCountry textFont shopText">CZ</span></p>
+                        </section>
+                        <div class="form-country">
+                            <button id="closeForm" class="close-button">&times;</button>
+                            <form id="countryForm">
+                                <label for="countrySelect" class="localText">Please select your Location </label>
+                                <select id="countrySelect" name="country" class="selection">
+                                    <option value="anou">Please select your shipping country</option>
+                                    <option value="us">United States (USD)</option>
+                                    <option value="uk">United Kingdom (GBP)</option>
+                                    <option value="ca">Canada (CAD)</option>
+                                    <option value="vn">Vietnam (VND)</option>
+                                    <option value="jp">Japan (JPY)</option>
+                                    <option value="kr">South Korea (KRW)</option>
+                                    <option value="de">Germany (EURO)</option>
+                                    <option value="fr">France (EURO)</option>
+                                    <option value="es">Spain (EURO)</option>
+                                    <option value="it">Italy (EURO)</option>
+                                    <option value="cn">China (CNY)</option>
+                                    <option value="in">India (INR)</option>
+                                    <option value="au">Australia (AUD)</option>
+                                    <option value="br">Brazil (BRL)</option>
+                                    <option value="za">South Africa (ZAR)</option>
+                                    <option value="mx">Mexico (MXN)</option>
+                                </select>
+                                <button type="submit" class="save-button localText">Continue Shopping</button>
+                                <p class="note localText">
+                                    Please be advised that changing your location while shopping will remove all contents from your Shopping Bag.
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+    
+                    <!-- Login -->
+                    <li><a href="" class="text-dark text-decoration-none textFont loginText">Login</a></li>
+                    
+                    <!-- Cart -->
+                    <li>
+                        <div class="cartContainer">
+                            <button id="cartButton" style="background: none; border: none; cursor: pointer;">
+                                <i class="fa-sharp fa-light fa-bag-shopping iconBag" style="color: black;"></i>
+                            </button>
+                            <div class="cartExtend">
+                                <button id="closeCart" class="close-button">x</button>
+                                <div class="cartContent">
+                                    <h3>Shopping Bag</h3>
+                                    <p>No product in my shopping bag</p>
+                                    <hr>
+                                    <p>Standard Shipping <span>Free</span></p>
+                                    <p>Total <span>S$ 0</span></p>
+                                </div>
+                            </div>
+                            <div class="cartOverlay"></div> 
+                            </div>
+                        </div>
+                    </li>
+                    
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div class="MainDiv">
+        <div class="divLeft">
+            <h5>Customer Service</h5>
+            <div class="request">
+                <p class="iLeft">
+                    <a href="" style="text-underline-offset: 8px;" class="contact"> Contact us</a>
+                </p>
+                <p class="iLeft">Shippng</p>
+                <p class="iLeft">Tax</p>
+                <p class="iLeft">Exchanges/Returns</p>
+                <p class="iLeft">View order</p>
+                <p class="iLeft">Repair Service Guide</p>
+                <p class="iLeft">Product Usage Guide</p>
+                <p class="iLeft">Certificate of Authenticity</p>
+                <p class="iLeft">FAQ</p>
+            </div>
+        </div>
+        <div class="divRight">
+            <div class="itemRght">
+                <p class="heading">General Inquiry</p>
+                <p>If you have any questions or need further assistance, please contact us your convenient methods. Please refer to each category of Shipping, Returns, Track your order for more details.</p>
+                Online Customer Service Hours of Operation
+                <br>
+                Monday - Friday: 9:30am - 5pm (GMT+9)
+            </div>
+            <div style="border-top: solid 1px gray; margin-top: 20px"></div>
+            <div class="itemRight item2">
+                <p class="heading">Phone</p>
+                <p>For product information and online purchase call us at 1600-2126, our customer advisor will be happy to assist you. If you wish to contact the Offline store, please go to the 'Stores'. (Your call may be record for quality and monitoring purposes)</p>
+            </div>
+            <div style="border-bottom: solid 1px gray"></div>
+            <div class="itemRight">
+                <p class="heading">Email</p>
+                <p>Please click to 'E-mail us' to leave your inquiry to GENTLE MONSTER customer service. Send us details and contact information we will reach you within 48 business hours.</p>
+                <div class="container">
+                    <form action="">
+                  
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name.." class="textBox">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="textBox">
+
+                      <label for="email">Email</label>
+                      <input type="text" id="emain" name="email" placeholder="Your email.." class="textBox">
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="E-mail us">
+                      <input type="submit" value="General Inquiry">
+                      <input type="submit" value="Repair Service Inquiry">
+                  
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Customer Service -->
+        <div class="footer_nav">
+            <div class="footer_section">
+                <div class="footer_section_title">Customer Service</div>
+                <div class="footer_group">
+                    <ul class="footer_items">
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/customercare/contact">Contact us</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/customercare/shipping">Shipping</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/customercare/tax">Tax</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/customercare/return">Exchanges/Returns</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/bbs/order_guest">Track Your Order</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Legal Notice -->
+            <div class="footer_section">
+                <div class="footer_section_title">Legal Notice</div>
+                <div class="footer_group">
+                    <ul class="footer_items">
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/legal/terms">Terms of Use</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/legal/privacy_policy">Privacy Policy</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/legal/cookie_policy">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer_section">
+                <div class="footer_section_title">Social Media</div>
+                <div class="footer_group">
+                    <ul class="footer_items">
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.facebook.com/gentlemonsterofficial" target="_blank">Facebook</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="http://instagram.com/gentlemonster" target="_blank">Instagram</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.youtube.com/c/gentlemonsterofficial" target="_blank">YouTube</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://twitter.com/_gentlemonster_" target="_blank">X</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="http://pf.kakao.com/_Vgxnhu" target="_blank">KakaoTalk</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.pinterest.com/gentlemonster" target="_blank">Pinterest</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/img/common/wechat_qr.jpg" target="_blank">WeChat</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="http://weibo.com/gentlemonsteraccount" target="_blank">Weibo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2024 GENTLE MONSTER</p>
+            <div>
+                All rights reserved. IICOMBINED Co., Ltd.
+            </div>
+        </div>
+    </footer>
+
+    <script src="\script\subsearchBar.js"></script>
+    <script src="\script\shopIn.js"></script>
+    <script src="\script\subcart.js"></script>
+</body>
+</html>

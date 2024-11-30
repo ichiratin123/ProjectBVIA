@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="subStyle.css">
+    <title>GENTLE MONSTER Official Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-3b124ff0e0d7a67cd8c995d0aeb1d15a.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+      >
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav_items">
+                <!-- Logo -->
+                <li id="logo">
+                    <!-- <img src="image/logo_white.png" alt="logowhite"> -->
+                     <a href="index.html" class="text-decoration-none text-dark" id="logoText">GENTLE MONSTER</a>
+                </li>
+                
+                <!-- Navigation Items -->
+                <div class="flex_row">
+                    <li class="nav_item textFont"><a href="sunglasses.html">Sunglasses</a></li>
+                    <li class="nav_item textFont"><a href="glasses.html">Glasses</a></li>
+                    <li class="nav_item textFont"><a href="collab.html">Collaborations</a></li>
+                    <li class="nav_item textFont"><a href="styles.html">Styles</a></li>
+                    <li class="nav_item textFont"><a href="stories.html">Stories</a></li>
+                    <li class="nav_item textFont"><a href="stores.html">Stores</a></li>
+                    <li class="nav_item textFont"><a href="services.html">Services</a></li>
+                </div>
+                
+                <!-- Right-Side Items -->
+                <div class="flex_row">
+                    <!-- Search Bar -->
+                    <li>
+                        <div class="searchContainer">                     
+                            <div class="popupcontainer">
+                                <input type="text" id="search" name="search" class="searchBar" placeholder="Search">
+                                <button id="closeSearchBar">x</button>
+                                <div class="itemExtend">
+                                    <div class="itemLeft">
+                                        <p>Popular searches</p>
+                                        <ul>
+                                            <li>Gelati 01</li>
+                                            <li>Jade 01(BR)</li>
+                                            <li>Dada 01(G)</li>
+                                            <li>Benben GR7</li>
+                                            <li>Molta BRC9</li>
+                                            <li>Young G13</li>
+                                            <li>Kiko 01(SM)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="itemRight">
+                                        <p>Explore our:</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="effectOverlay"></div>
+                            </div>
+
+                        </div>
+                    </li>
+    
+                    <!-- Shop Country -->
+                    <li class="shopCountry">
+                        <section id="shopIn">
+                            <p class="text-dark textFont shopText">Shop in <span class="currentCountry textFont shopText">CZ</span></p>
+                        </section>
+                        <div class="form-country">
+                            <button id="closeForm" class="close-button">&times;</button>
+                            <form id="countryForm">
+                                <label for="countrySelect" class="localText">Please select your Location </label>
+                                <select id="countrySelect" name="country" class="selection">
+                                    <option value="anou">Please select your shipping country</option>
+                                    <option value="us">United States (USD)</option>
+                                    <option value="uk">United Kingdom (GBP)</option>
+                                    <option value="ca">Canada (CAD)</option>
+                                    <option value="vn">Vietnam (VND)</option>
+                                    <option value="jp">Japan (JPY)</option>
+                                    <option value="kr">South Korea (KRW)</option>
+                                    <option value="de">Germany (EURO)</option>
+                                    <option value="fr">France (EURO)</option>
+                                    <option value="es">Spain (EURO)</option>
+                                    <option value="it">Italy (EURO)</option>
+                                    <option value="cn">China (CNY)</option>
+                                    <option value="in">India (INR)</option>
+                                    <option value="au">Australia (AUD)</option>
+                                    <option value="br">Brazil (BRL)</option>
+                                    <option value="za">South Africa (ZAR)</option>
+                                    <option value="mx">Mexico (MXN)</option>
+                                </select>
+                                <button type="submit" class="save-button localText">Continue Shopping</button>
+                                <p class="note localText">
+                                    Please be advised that changing your location while shopping will remove all contents from your Shopping Bag.
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+    
+                    <!-- Login -->
+                    <li><a href="" class="text-dark text-decoration-none textFont loginText">Login</a></li>
+                    
+                    <!-- Cart -->
+                    <li>
+                        <div class="cartContainer">
+                            <button id="cartButton" style="background: none; border: none; cursor: pointer;">
+                                <i class="fa-sharp fa-light fa-bag-shopping iconBag" style="color: black;"></i>
+                            </button>
+                            <div class="cartExtend">
+                                <button id="closeCart" class="close-button">x</button>
+                                <div class="cartContent">
+                                    <h3>Shopping Bag</h3>
+                                    <p>No product in my shopping bag</p>
+                                    <hr>
+                                    <p>Standard Shipping <span>Free</span></p>
+                                    <p>Total <span>S$ 0</span></p>
+                                </div>
+                            </div>
+                            <div class="cartOverlay"></div> 
+                            </div>
+                        </div>
+                    </li>
+                    
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <!-- <div class="empty"></div> -->
+    <div class="category-slider">
+        <button class="slider-btn left-btn">&lt;</button>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slider-item">
+                    <a href="/subweb/sunglasses.html" class="text-decoration-none">
+                        <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/view_all_3.jpg" alt="View All">
+                        <p>View all</p>
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/2024-Thumbnail.jpg" alt="2024 Collection">
+                    <p>2024 Collection</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/bold-Thumbnail.jpg" alt="BOLD Collection">
+                    <p>BOLD Collection</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/file_1_1.jpg" alt="Bestsellers">
+                    <p>Bestsellers</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/SUN_GIFT_Dada_RC6.jpg" alt="Gifts">
+                    <p>Gifts</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/tinted.jpg" alt="Tinted Lenses">
+                    <p>Tinted Lenses</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/file_2_1.jpg" alt="Square">
+                    <p>Square</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/goggles.jpg" alt="Goggles">
+                    <p>Goggles</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/SUN_CATEYE_Terra_Cotta_Y6.jpg" alt="Cat-Eye">
+                    <p>Cat-Eye</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/oval.jpg" alt="Oval">
+                    <p>Oval</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://www-prd-kr.gentlemonster.com/media/catalog/category/SUN_ROUND_Jade_GC10.jpg" alt="Round">
+                    <p>Round</p>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn right-btn">&gt;</button>
+    </div>
+
+    <h5 class="section-title">Sunglasses / View all (<span id="product-count">0</span>)</h5>
+    <div class="product-section">
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="0">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-01-2.jpg" alt="Slide 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-01-1.jpg" alt="Slide 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-01-3.jpg" alt="Slide 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-01-4.jpg" alt="Slide 4">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-01-5.jpg" alt="Slide 5">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(0, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(0, 1)">&#10095;</button>
+                </div>
+
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3 class="text-danger saleItem">Sale Item: <span id="countdownTag"></span></h3>
+                        <a href="venom01.html" class="text-decoration-none"><h3>Venom 01</h3></a>
+                        <p><span class="priceItem">Kč7,950.00</span></p>
+                        <span>+ <span class="ColorNumber text-danger">4</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="0"></i>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="1">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-BRC11-2_1.jpg" alt="Venom BRC11 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/V/E/VENOM-BRC11-.jpg" alt="Venom BRC11 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-BRC11-1.jpg" alt="Venom BRC11 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-BRC11-3.jpg" alt="Venom BRC11 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-BRC11-4.jpg" alt="Venom BRC11 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-BRC11-5.jpg" alt="Venom BRC11 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(1, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(1, 1)">&#10095;</button>
+                </div>
+
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Venom BRC11</h3>
+                        <p>Kč 7,950.00</p>
+                        <span>+ <span class="ColorNumber text-danger">4</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="1"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="2">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-YC9-2.jpg" alt="Venom YC9 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/tmp/catalog/product/v/e/venomyc9.jpg" alt="Venom YC9 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-YC9-1.jpg" alt="Venom YC9 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-YC9-3.jpg" alt="Venom YC9 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-YC9-4.jpg" alt="Venom YC9 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-YC9-5.jpg" alt="Venom YC9 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(2, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(2, 1)">&#10095;</button>
+                </div>
+
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Venom YC9</h3>
+                        <p>Kč 7,950.00</p>
+                        <span>+ <span class="ColorNumber text-danger">4</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="2"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="3">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_VENOM-V3-2.jpg" alt="Venom V3 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-V3-1.jpg" alt="Venom V3 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-V3-3.jpg" alt="Venom V3 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-V3-4.jpg" alt="Venom V3 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_VENOM-V3-5.jpg" alt="Venom V3 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(3, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(3, 1)">&#10095;</button>
+                </div>
+
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Venom V3</h3>
+                        <p>Kč 7,950.00</p>
+                        <span>+ <span class="ColorNumber text-danger">4</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="3"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="4">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_LIN_01_2.jpg" alt="Lin 01 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_01_1.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_01_3.jpg" alt="Lin 01 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_01_4.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_01_5.jpg" alt="Lin 01 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(4, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(4, 1)">&#10095;</button>
+                </div>
+
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Lin 01</h3>
+                        <p>Kč 7,700.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="5">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_LIN_G12_2.jpg" alt="Lin G12 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_G12_1.jpg" alt="Lin G12 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_G12_3.jpg" alt="Lin G12 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_G12_4.jpg" alt="Lin G12 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_G12_5.jpg" alt="Lin G12 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(5, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(5, 1)">&#10095;</button>
+                </div>
+
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Lin G12</h3>
+                        <p>Kč 7,700.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="5"></i>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Product 7 -->
+             <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="6">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_LIN_V3_2.jpg" alt="Lin V3 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_V3_1.jpg" alt="Lin V3 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_V3_3.jpg" alt="Lin V3 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_V3_4.jpg" alt="Lin V3 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_V3_5.jpg" alt="Lin V3 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(6, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(6, 1)">&#10095;</button>
+                </div>
+
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Lin V3</h3>
+                        <p>Kč 7,700.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="6"></i>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Product 8 -->
+             <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="7">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_LIN_GR8_2.jpg" alt="Lin 01 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_GR8_1.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_GR8_3.jpg" alt="Lin 01 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_GR8_4.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_GR8_5.jpg" alt="Lin 01 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(7, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(7, 1)">&#10095;</button>
+                </div>
+
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Lin GR8</h3>
+                        <p>Kč 7,700.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="7"></i>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Product 9 -->
+             <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="8">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_LIN_W2_2.jpg" alt="Lin 01 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_W2_1.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_W2_3.jpg" alt="Lin 01 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_W2_4.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_LIN_W2_5.jpg" alt="Lin 01 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(8, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(8, 1)">&#10095;</button>
+                </div>
+
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Lin W2</h3>
+                        <p>Kč 7,700.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="8"></i>
+                    </div>
+                </div>
+
+            </div>
+
+             <!-- Product 10 -->
+             <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="9">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-01-2_2.jpg" alt="Lin 01 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-01_1.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-01-1_2.jpg" alt="Lin 01 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-01-3_2.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA01_F.jpg" alt="Lin 01 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-01-4_2.jpg" alt="Lin 01 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-01-5_2.jpg" alt="Lin 01 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(9, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(9, 1)">&#10095;</button>
+                </div>
+
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Dada 01</h3>
+                        <p>Kč 8,200.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="9"></i>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Product 11 -->
+             <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="10">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-01G_-2.jpg" alt="Lin 01 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_DADA-01(G)-1.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_DADA-01(G)-3.jpg" alt="Lin 01 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_DADA-01(G)-4.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://e-com-contents.s3.amazonaws.com/11001_DADA-01(G)-5.jpg" alt="Lin 01 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(10, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(10, 1)">&#10095;</button>
+                </div>
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Dada 01(G)</h3>
+                        <p>Kč 8,200.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="10"></i>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Product 12 -->
+             <div class="product-card">
+                <div class="controlButton">
+                    <div class="slider-wrapperP" data-slider-index="11">
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-BRC11-2_1.jpg" alt="Lin 01 Image 1">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-BRC11.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-BRC11-1_1.jpg" alt="Lin 01 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-BRC11-3_1.jpg" alt="Lin 01 Image 2">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-BRC11-4_1.jpg" alt="Lin 01 Image 3">
+                        </div>
+                        <div class="slider-itemP">
+                            <img src="https://www-prd-kr.gentlemonster.com/media/catalog/product/cache/6c6f229b8a7ab97f51028776641e27d1/1/1/11001_DADA-BRC11-5_1.jpg" alt="Lin 01 Image 3">
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" onclick="changeSlide(11, -1)">&#10094;</button>
+                    <button class="slider-arrow next" onclick="changeSlide(11, 1)">&#10095;</button>
+                </div>
+                <div class="product-text">
+                    <div class="product-info">
+                        <h3>Dada BRC11</h3>
+                        <p>Kč 8,200.00</p>
+                        <span>+ <span class="ColorNumber text-danger">5</span> Colors</span>
+                    </div>
+                    <div class="product-wishlist">
+                        <i class="fa-light fa-heart wishlistIcon" style="color: #000000;" data-id="11"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Customer Service -->
+        <div class="footer_nav">
+            <div class="footer_section">
+                <div class="footer_section_title">Customer Service</div>
+                <div class="footer_group">
+                    <ul class="footer_items">
+                        <li class="footer_item"><a class="footer_item_link" href="contactForm.html">Contact us</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/customercare/shipping">Shipping</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/customercare/tax">Tax</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/customercare/return">Exchanges/Returns</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/bbs/order_guest">Track Your Order</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Legal Notice -->
+            <div class="footer_section">
+                <div class="footer_section_title">Legal Notice</div>
+                <div class="footer_group">
+                    <ul class="footer_items">
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/legal/terms">Terms of Use</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/legal/privacy_policy">Privacy Policy</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/int/legal/cookie_policy">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer_section">
+                <div class="footer_section_title">Social Media</div>
+                <div class="footer_group">
+                    <ul class="footer_items">
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.facebook.com/gentlemonsterofficial" target="_blank">Facebook</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="http://instagram.com/gentlemonster" target="_blank">Instagram</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.youtube.com/c/gentlemonsterofficial" target="_blank">YouTube</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://twitter.com/_gentlemonster_" target="_blank">X</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="http://pf.kakao.com/_Vgxnhu" target="_blank">KakaoTalk</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.pinterest.com/gentlemonster" target="_blank">Pinterest</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="https://www.gentlemonster.com/img/common/wechat_qr.jpg" target="_blank">WeChat</a></li>
+                        <li class="footer_item"><a class="footer_item_link" href="http://weibo.com/gentlemonsteraccount" target="_blank">Weibo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2024 GENTLE MONSTER</p>
+            <div>
+                All rights reserved. IICOMBINED Co., Ltd.
+            </div>
+        </div>
+    </footer>
+    <script src="\script\subsearchbar.js"></script>
+    <script src="\script\shopIn.js"></script>
+    <script src="\script\subcart.js"></script>
+    <script src="\script\sliderSunglasses.js"></script>
+    <script src="\script\productSlider.js"></script>
+    <script src="\script\productText.js"></script>
+    <script src="\script\countdown.js"></script>
+
+    
+</body>
+</html>

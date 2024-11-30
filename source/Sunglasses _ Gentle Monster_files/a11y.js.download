@@ -1,0 +1,68 @@
+const a11y = () => {
+	document.addEventListener('mousedown', (e) => {
+		const tags = ['a', 'button', 'svg', 'img']
+		// desc: mousedown시 기본동작(포커싱) 캔슬
+		if (tags.includes(e.target.tagName.toLowerCase())) {
+			e.preventDefault()
+		} else if (e.target.tagName.toLowerCase() === 'input' && e.target.type === 'radio') {
+			e.preventDefault()
+		} else {
+			const path = e.path ? e.path : e.composedPath()
+			const labelPath = path.filter(elem => elem.tagName === 'LABEL')
+			if (labelPath.length) {
+				const input = document.getElementById(labelPath[0].getAttribute('for'))
+				const types = ['radio', 'checkbox']
+				if (input && types.includes(input.type)) {
+					input.dataset.focus = 'true'
+				}
+			}
+		}
+	})
+
+	document.addEventListener('keydown', (e) => {
+		if (e.keyCode === 32) {
+			const activeElement = document.activeElement
+			// desc: role="button" 속성인 경우 스페이스바 keydown시 클릭이벤트 발생
+			if (activeElement.getAttribute('role') === 'button') {
+				activeElement.click()
+			}
+		}
+	})
+	document.addEventListener('click', (e) => {
+		// desc: input radio 인 경우 mouse 클릭시 포커싱 blur 처리
+		if (e.target.tagName.toLowerCase() === 'input' && e.target.type === 'radio') {
+			if (e.target.dataset.focus) {
+				e.target.blur()
+				delete e.target.dataset.focus
+			}
+		}
+	})
+	document.addEventListener('change', (e) => {
+		// desc: input checkbox 인 경우 mouse 클릭시 포커싱 blur 처리
+		if (e.target.tagName.toLowerCase() === 'input' && e.target.type === 'checkbox') {
+			if (e.target.dataset.focus) {
+				e.target.blur()
+				delete e.target.dataset.focus
+			}
+		}
+	})
+}
+
+const cookiePopupIssue = () => {
+	if (document.querySelector('#onetrust-banner-sdk')) {
+		if (document.querySelector('#skip a')) {
+			document.querySelector('#skip a').style.display = 'none'
+		}
+		document.querySelector('#onetrust-pc-btn-handler').focus()
+		document.querySelector('#onetrust-accept-btn-handler').addEventListener('click', () => {
+			setTimeout(() => {
+				if (document.querySelector('#skip a')) {
+					document.querySelector('#skip a').style.display = ''
+				}
+			}, 300)
+		})
+	}
+}
+
+document.addEventListener('DOMContentLoaded', a11y)
+window.addEventListener('load', cookiePopupIssue)
