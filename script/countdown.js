@@ -1,4 +1,4 @@
-let deadline = new Date("Dec 2, 2024 13:37:25").getTime();
+let deadline = new Date("Dec 5, 2024 13:37:25").getTime();
 //let deadline = new Date("Nov 28, 2024 23:52:00 ").getTime();
 let price = document.querySelector(".priceItem");
 let delTag;
