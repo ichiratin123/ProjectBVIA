@@ -371,6 +371,11 @@ label {
     color: black;
 }
 
+.mainText{
+    font-weight: 1000;
+    font-size: 25px;
+}
+
 /* Main */
 /* slider */
 
